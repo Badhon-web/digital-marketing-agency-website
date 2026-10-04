@@ -50,7 +50,7 @@ digital-marketing-agency-website/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/digital-marketing-agency-website.git
+git clone https://github.com/Badhon-web/digital-marketing-agency-website
 ```
 
 2. Open the project folder.
