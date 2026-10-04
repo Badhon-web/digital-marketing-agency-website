@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boostweb Digital | Digital Marketing, SEO & Web Development Agency</title>
+<meta name="description" content="Boostweb Digital is a digital marketing agency in Dhaka offering SEO, web design, web development, graphic design and ads to help your business grow online.">
+<meta name="keywords" content="digital marketing agency, SEO agency, web design, web development, social media marketing, Facebook ads, Google ads, graphic design, branding, digital marketing agency in Dhaka">
+<!-- Replace with your real domain -->
+<link rel="canonical" href="https://www.your-domain.com/">
+<!-- Favicon placeholder: replace the data URI with your own favicon file -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b6cff'/%3E%3Cpath d='M9 22V10h7a3 3 0 010 6h-7m7 0a3 3 0 010 6H9' stroke='%23fff' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Boostweb Digital | Your Digital Growth Partner">
+<meta property="og:description" content="SEO, digital marketing, web design and development to grow your business online.">
+<meta property="og:url" content="https://www.your-domain.com/">
+<meta property="og:image" content="https://www.your-domain.com/og-image.jpg"><!-- Replace with your share image -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boostweb Digital | Your Digital Growth Partner">
+<meta name="twitter:description" content="SEO, digital marketing, web design and development to grow your business online.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DigitalMarketingAgency","name":"Boostweb Digital","slogan":"Your Digital Growth Partner","url":"https://www.your-domain.com/","email":"YOUR EMAIL","telephone":"YOUR PHONE","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"areaServed":"Worldwide","sameAs":["https://facebook.com/","https://instagram.com/","https://linkedin.com/"],"makesOffer":["Digital Marketing","SEO","Web Design","Web Development","Graphic Design","Social Media Marketing","Google Ads","Facebook Ads"]}
+</script>
+<style>
+/* ===== Design tokens ===== */
+:root{--bg:#f5f7ff;--card:#fff;--ink:#0d1330;--mut:#5b6385;--line:#e3e7f7;--blue:#3b6cff;--vio:#7a4dff;--navy:#0a1029;--navy2:#121a3d;--grad:linear-gradient(135deg,#3b6cff,#7a4dff);--sh:0 10px 30px rgba(20,30,90,.08);--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font:16px/1.65 "Sora",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}ul{list-style:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,92%);margin:auto}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.2;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:14px}
+.head{max-width:680px;margin:0 auto 46px;text-align:center}.head p{color:var(--mut)}
+.dark{background:var(--navy);color:#eaeeff}.dark .head p,.dark p.m{color:#aab3d8}
+.ico{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ib{width:52px;height:52px;border-radius:14px;background:var(--grad);color:#fff;display:grid;place-items:center;margin-bottom:16px}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 24px;border-radius:999px;font:600 .95rem inherit;border:2px solid transparent;cursor:pointer;transition:.25s}
+.btn.p{background:var(--grad);color:#fff;box-shadow:0 8px 24px rgba(59,108,255,.35)}.btn.p:hover{transform:translateY(-2px)}
+.btn.o{border-color:currentColor;background:transparent;color:inherit}.btn.o:hover{background:rgba(122,140,255,.14)}
+/* Nav */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:.3s}
+header.s{background:rgba(10,16,41,.92);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.25)}
+nav{display:flex;align-items:center;justify-content:space-between;height:72px;color:#fff}
+.logo{font-weight:800;letter-spacing:.06em;font-size:1.1rem;line-height:1.1}.logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.logo small{display:block;font-weight:400;font-size:.62rem;letter-spacing:.04em;color:#aab3d8}
+.links{display:flex;gap:4px;align-items:center}.links a{padding:8px 10px;font-size:.88rem;color:#cdd4f5;border-radius:8px}.links a:hover,.links a.on{color:#fff;background:rgba(255,255,255,.09)}
+.burger{display:none;background:none;border:0;color:#fff;width:46px;height:46px;cursor:pointer}
+/* Hero */
+.hero{background:radial-gradient(800px 420px at 85% 10%,rgba(122,77,255,.35),transparent),radial-gradient(700px 400px at 0 90%,rgba(59,108,255,.3),transparent),var(--navy);color:#fff;padding:150px 0 90px}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:18px}.hero p{color:#b9c2e6;max-width:560px;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}.tr{font-size:.85rem;color:#8d98c9}
+.vis{position:relative;aspect-ratio:1;max-width:460px;margin:auto;width:100%}
+.vis img{border-radius:28px;width:100%;height:100%;object-fit:cover;opacity:.9;border:1px solid rgba(255,255,255,.15)}
+.chip{position:absolute;background:rgba(255,255,255,.96);color:var(--ink);padding:12px 16px;border-radius:14px;box-shadow:var(--sh);font-size:.82rem;font-weight:600;animation:fl 5s ease-in-out infinite}
+.chip span{display:block;color:var(--blue);font-size:1.3rem}.c1{left:-8%;top:14%}.c2{right:-6%;bottom:12%;animation-delay:-2.5s}
+@keyframes fl{50%{transform:translateY(-10px)}}
+/* Grids & cards */
+.grid{display:grid;gap:22px}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:var(--sh);transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--blue)}.card p{color:var(--mut);font-size:.94rem}.card h3{font-size:1.1rem;margin-bottom:8px}
+.more{display:inline-block;margin-top:14px;color:var(--blue);font-weight:600;font-size:.9rem}.more:hover{text-decoration:underline}
+/* Stats */
+.stats{padding:0;margin-top:-46px;position:relative;z-index:2}
+.sg{background:var(--card);border-radius:24px;box-shadow:var(--sh);padding:30px;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:16px}
+.sg b{font-size:2.3rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.sg span{display:block;color:var(--mut);font-size:.9rem}
+/* About */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.two img{border-radius:24px;box-shadow:var(--sh);width:100%;aspect-ratio:4/3;object-fit:cover}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.mini div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-weight:600;font-size:.92rem}
+/* Solutions */
+.sol{background:var(--navy2);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:32px}
+.sol h3{font-size:2rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.sol h4{margin:6px 0 10px;font-size:1rem}
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+.steps:before{content:"";position:absolute;top:26px;left:8%;right:8%;height:2px;background:var(--grad);opacity:.35}
+.st{text-align:center;position:relative}.st i{font-style:normal;width:54px;height:54px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;margin:0 auto 14px;font-weight:700;box-shadow:0 0 0 6px var(--bg)}
+.st p{color:var(--mut);font-size:.9rem}
+/* Portfolio */
+.fl{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:30px}
+.fl button{min-height:42px;padding:0 20px;border-radius:999px;border:1px solid var(--line);background:#fff;font:600 .9rem inherit;cursor:pointer;color:var(--ink)}
+.fl button.on{background:var(--grad);color:#fff;border-color:transparent}
+.pj{padding:0;overflow:hidden}.pj img{aspect-ratio:16/10;object-fit:cover;width:100%}.pj div{padding:22px}.pj small{color:var(--vio);font-weight:700;font-size:.78rem}
+.pj.h{display:none}
+/* CTA band */
+.band{background:var(--grad);color:#fff;text-align:center;border-radius:28px;padding:60px 28px}.band p{max-width:640px;margin:0 auto 26px;opacity:.92}
+.band .btn.p{background:#fff;color:var(--blue);box-shadow:none}
+/* Testimonials */
+.tw{overflow:hidden}.tt{display:flex;transition:transform .5s}.tt>div{flex:0 0 100%;padding:0 6px}
+.tc{max-width:720px;margin:auto;text-align:center}.tc .av{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;object-fit:cover}.star{color:#f5b301;letter-spacing:3px}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:22px}.dots button{width:14px;height:14px;border-radius:50%;border:0;background:#c9d0ee;cursor:pointer;padding:0}.dots button.on{background:var(--blue);width:34px}
+.demo{font-size:.75rem;color:var(--mut);text-align:center;margin-top:14px}
+/* Industries / why */
+.ind{text-align:center;padding:22px}.ind .ib{margin:0 auto 12px}
+/* Pricing */
+.pr{text-align:center}.pr.f{border:2px solid var(--blue);transform:scale(1.03)}.pr b{display:block;font-size:1.5rem;margin:12px 0 18px}
+/* FAQ */
+.faq{max-width:780px;margin:auto}.q{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+.q button{width:100%;text-align:left;background:none;border:0;padding:18px 22px;font:600 1rem inherit;color:var(--ink);display:flex;justify-content:space-between;gap:12px;cursor:pointer;min-height:54px}
+.q button:after{content:"+";font-size:1.4rem;color:var(--blue);transition:.3s}.q button[aria-expanded=true]:after{transform:rotate(45deg)}
+.a{max-height:0;overflow:hidden;transition:max-height .35s}.a p{padding:0 22px 20px;color:var(--mut)}
+/* Contact */
+form{background:#fff;color:var(--ink);border-radius:var(--r);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .w{grid-column:1/-1}label{font-size:.85rem;font-weight:600;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;min-height:46px;padding:10px 14px;border:1px solid #cfd6ef;border-radius:12px;font:inherit}textarea{min-height:120px}
+.err{color:#d6244a;font-size:.78rem;min-height:1em}input.bad,select.bad,textarea.bad{border-color:#d6244a}
+#ok{display:none;background:#e6f8ee;color:#15683a;padding:14px;border-radius:12px;font-weight:600}
+.ci li{margin-bottom:14px}.soc{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.soc a{padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.25);font-size:.85rem}.soc a:hover{background:rgba(255,255,255,.1)}
+/* Footer */
+footer{background:#060a1d;color:#aab3d8;padding:64px 0 24px;font-size:.92rem}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px}footer h3{color:#fff;font-size:1rem;margin-bottom:14px}footer li{margin-bottom:8px}footer a:hover{color:#fff}
+.fb{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.85rem}
+#top{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:0;background:var(--grad);color:#fff;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40;font-size:1.2rem}#top.v{opacity:1;pointer-events:auto}
+/* Reveal */
+.rv{opacity:0;transform:translateY(22px);transition:.7s}.rv.in{opacity:1;transform:none}
+/* Responsive */
+@media(max-width:980px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.steps:before{display:none}.fg{grid-template-columns:1fr 1fr}.hg,.two{grid-template-columns:1fr}.links{position:fixed;inset:72px 0 auto;flex-direction:column;background:var(--navy);padding:14px 4%;max-height:0;overflow:hidden;padding-block:0;transition:.3s}.links.open{max-height:520px;padding-block:14px}.links a{width:100%;padding:12px}.burger{display:block}.links .btn{margin-top:6px}.sg{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){section{padding:64px 0}.g3,.g4,.fg,form{grid-template-columns:1fr}.c1{left:0}.c2{right:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<!-- Icon sprite (lightweight inline SVG icons) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="chart" viewBox="0 0 24 24"><path d="M3 20h18M6 16v-5M11 16V6M16 16v-8M21 16v-3"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></symbol>
+<symbol id="mon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+<symbol id="share" viewBox="0 0 24 24"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.6 10.6l6.8-3.2M8.6 13.4l6.8 3.2"/></symbol>
+<symbol id="target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="pen" viewBox="0 0 24 24"><path d="M4 20l4-1L20 7l-3-3L5 16zM14 6l3 3"/></symbol>
+<symbol id="spark" viewBox="0 0 24 24"><path d="M12 3l2.2 6.3L21 12l-6.8 2.7L12 21l-2.2-6.3L3 12l6.8-2.7z"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6M17 5a3.5 3.5 0 010 7M22 20c0-3-2-5-4-5.6"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></symbol>
+<symbol id="chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+<symbol id="home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></symbol>
+</svg>
+
+<header id="hd">
+  <nav class="wrap" aria-label="Main navigation">
+    <a href="#" class="logo" aria-label="Boostweb Digital home">BOOST<b>WEB</b> DIGITAL<small>Your Digital Growth Partner</small></a>
+    <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false" aria-controls="lk"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="links" id="lk">
+      <a href="#">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#portfolio">Portfolio</a><a href="#why-us">Why Us</a><a href="#testimonials">Testimonials</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      <a href="#contact" class="btn p">Get a Free Consultation</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- 2. HERO -->
+<section class="hero" id="home">
+  <div class="wrap hg">
+    <div>
+      <h1>Grow Your Business With Smart Digital Solutions</h1>
+      <p>We help businesses grow online through Digital Marketing, SEO, Web Design, Web Development, Graphic Design and performance-driven digital strategies.</p>
+      <div class="cta"><a class="btn p" href="#contact">Get Started</a><a class="btn o" href="#services">Explore Our Services</a></div>
+      <p class="tr" style="margin:0">SEO • Digital Marketing • Web Development • Creative Design</p>
+    </div>
+    <div class="vis">
+      <!-- Replace this demo image with your own agency/hero image -->
+      <img data-art="dash:640" alt="Digital agency dashboard showing website traffic and growth" width="640" height="640" fetchpriority="high">
+      <div class="chip c1"><span>+128%</span>Organic traffic</div>
+      <div class="chip c2"><span>3.4x</span>Lead growth</div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. STATS (edit data-count values) -->
+<section class="stats" aria-label="Agency statistics"><div class="wrap sg">
+  <div><b data-count="50" data-suffix="+">0</b><span>Projects Completed</span></div>
+  <div><b data-count="30" data-suffix="+">0</b><span>Happy Clients</span></div>
+  <div><b data-count="3" data-suffix="+">0</b><span>Years Experience</span></div>
+  <div><b data-count="95" data-suffix="%">0</b><span>Client Satisfaction</span></div>
+</div></section>
+
+<!-- 4. ABOUT -->
+<section id="about"><div class="wrap two">
+  <!-- Replace this demo image with your own team/agency image -->
+  <img class="rv" loading="lazy" data-art="team:480" alt="Boostweb Digital team planning a marketing strategy" width="720" height="540">
+  <div class="rv">
+    <h2>About Boostweb Digital</h2>
+    <p style="color:var(--mut)">Boostweb Digital helps businesses establish, improve and grow their online presence through integrated digital solutions. We bring together marketing, technology, creativity and strategy, so your website, ads and brand all work toward the same goal: more customers.</p>
+    <div class="mini"><div>✔ Result Driven</div><div>✔ Creative Solutions</div><div>✔ Modern Technology</div><div>✔ Client Focused</div></div>
+    <a class="btn p" href="#why-us">Learn More About Us</a>
+  </div>
+</div></section>
+
+<!-- 5. SERVICES -->
+<section id="services" style="background:#fff"><div class="wrap">
+  <div class="head rv"><h2>Our Digital Services</h2><p>Everything you need to build, grow and scale your digital presence.</p></div>
+  <div class="grid g3">
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#chart"/></svg></div><h3>Digital Marketing</h3><p>Strategic digital marketing campaigns designed to increase brand awareness, traffic and conversions.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#search"/></svg></div><h3>SEO</h3><p>On-page, technical and off-page SEO strategies focused on improving search visibility and organic growth.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#mon"/></svg></div><h3>Web Design</h3><p>Modern, responsive and conversion-focused website design.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#code"/></svg></div><h3>Web Development</h3><p>Fast, secure and scalable websites built according to business requirements.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#share"/></svg></div><h3>Social Media Marketing</h3><p>Professional social media management and growth strategies for Facebook, Instagram and other platforms.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#users"/></svg></div><h3>Facebook Ads</h3><p>Targeted Facebook advertising and lead generation campaigns.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#target"/></svg></div><h3>Google Ads</h3><p>Performance-focused Google Ads campaigns designed to generate relevant traffic and leads.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#pen"/></svg></div><h3>Graphic Design</h3><p>Professional social media posts, banners, promotional graphics and brand visuals.</p><a class="more" href="#contact">Learn More</a></article>
+    <article class="card rv"><div class="ib"><svg class="ico"><use href="#spark"/></svg></div><h3>Branding &amp; Strategy</h3><p>Creative branding and digital strategies to build a strong and memorable online identity.</p><a class="more" href="#contact">Learn More</a></article>
+  </div>
+</div></section>
+
+<!-- 6. FEATURED SOLUTIONS -->
+<section class="dark" id="solutions"><div class="wrap">
+  <div class="head rv"><h2>One Team, Three Growth Engines</h2><p class="m">Our services work together: build the foundation, reach the audience, grow organically.</p></div>
+  <div class="grid g3">
+    <div class="sol rv"><h3>Grow</h3><h4>SEO + Content + Organic Growth</h4><p class="m">Be found by customers already searching for what you offer.</p></div>
+    <div class="sol rv"><h3>Reach</h3><h4>Facebook Ads + Google Ads + Social Media Marketing</h4><p class="m">Put your message in front of the right people, right now.</p></div>
+    <div class="sol rv"><h3>Build</h3><h4>Web Design + Web Development + Branding</h4><p class="m">A fast, credible website and brand that turns visitors into clients.</p></div>
+  </div>
+</div></section>
+
+<!-- 7. PROCESS -->
+<section id="process"><div class="wrap">
+  <div class="head rv"><h2>How We Work</h2><p>A clear, five-step process from first call to measurable results.</p></div>
+  <ol class="steps" style="list-style:none">
+    <li class="st rv"><i>01</i><h3>Discover</h3><p>Understand your business, audience and goals.</p></li>
+    <li class="st rv"><i>02</i><h3>Strategize</h3><p>Develop a customized digital strategy.</p></li>
+    <li class="st rv"><i>03</i><h3>Create</h3><p>Design and build high-quality digital solutions.</p></li>
+    <li class="st rv"><i>04</i><h3>Launch</h3><p>Launch campaigns, websites and marketing activities.</p></li>
+    <li class="st rv"><i>05</i><h3>Optimize</h3><p>Analyze performance and continuously improve results.</p></li>
+  </ol>
+</div></section>
+
+<!-- 8. PORTFOLIO (cards built by JS from the "projects" array at the bottom) -->
+<section id="portfolio" style="background:#fff"><div class="wrap">
+  <div class="head rv"><h2>Our Recent Work</h2><p>A selection of demo projects. Replace them with your real case studies.</p></div>
+  <div class="fl" role="group" aria-label="Filter projects"><button class="on" data-f="all">All</button><button data-f="Web">Web</button><button data-f="SEO">SEO</button><button data-f="Marketing">Marketing</button><button data-f="Branding">Branding</button></div>
+  <div class="grid g3" id="pg"></div>
+</div></section>
+
+<!-- 9. WHY US (JS-built) -->
+<section id="why-us"><div class="wrap">
+  <div class="head rv"><h2>Why Choose Boostweb Digital?</h2><p>Practical, honest digital work built around your goals.</p></div>
+  <div class="grid g4" id="wg"></div>
+</div></section>
+
+<!-- 10. GROWTH CTA -->
+<section style="padding-top:0"><div class="wrap"><div class="band rv">
+  <h2>Ready to Take Your Business to the Next Level?</h2>
+  <p>Let's build a stronger digital presence, attract the right audience and turn your online presence into real business growth.</p>
+  <div class="cta" style="justify-content:center;margin:0"><a class="btn p" href="#contact">Start Your Project</a><a class="btn o" href="#contact">Talk to Us</a></div>
+</div></div></section>
+
+<!-- 11. TESTIMONIALS (DEMO content) -->
+<section id="testimonials" style="background:#fff"><div class="wrap">
+  <div class="head rv"><h2>What Our Clients Say</h2></div>
+  <div class="tw"><div class="tt" id="tt"></div></div>
+  <div class="dots" id="td" role="tablist" aria-label="Choose testimonial"></div>
+  <p class="demo">Demo testimonials and photos. Replace with real client feedback.</p>
+</div></section>
+
+<!-- 12. INDUSTRIES (JS-built) -->
+<section><div class="wrap">
+  <div class="head rv"><h2>Businesses We Help</h2><p>From local shops to international brands.</p></div>
+  <div class="grid g4" id="ig"></div>
+</div></section>
+
+<!-- 13. PRICING -->
+<section class="dark" id="pricing"><div class="wrap">
+  <div class="head rv"><h2>Flexible Digital Solutions</h2><p class="m">Every business is different. We create customized solutions based on your goals and requirements.</p></div>
+  <div class="grid g3">
+    <div class="card pr rv" style="background:var(--navy2);border-color:rgba(255,255,255,.1);color:#fff"><h3>Starter</h3><p>For small businesses getting started online.</p><b>Custom Pricing</b><a class="btn o" href="#contact">Request a Quote</a></div>
+    <div class="card pr f rv" style="background:var(--navy2);color:#fff"><h3>Growth</h3><p>For businesses looking to increase traffic, leads and sales.</p><b>Custom Pricing</b><a class="btn p" href="#contact">Request a Quote</a></div>
+    <div class="card pr rv" style="background:var(--navy2);border-color:rgba(255,255,255,.1);color:#fff"><h3>Premium</h3><p>For businesses looking for complete digital growth solutions.</p><b>Custom Pricing</b><a class="btn o" href="#contact">Request a Quote</a></div>
+  </div>
+</div></section>
+
+<!-- 14. FAQ (JS-built) -->
+<section id="faq"><div class="wrap">
+  <div class="head rv"><h2>Frequently Asked Questions</h2></div>
+  <div class="faq" id="fq"></div>
+</div></section>
+
+<!-- 15. BLOG (DEMO content) -->
+<section id="insights" style="background:#fff"><div class="wrap">
+  <div class="head rv"><h2>Digital Insights</h2><p>Demo articles and images. Replace with your own posts.</p></div>
+  <div class="grid g3">
+    <article class="card pj rv"><!-- Replace this demo image with your own blog image --><img loading="lazy" data-art="seo:400" alt="SEO tips for small businesses" width="640" height="400"><div><small>SEO · Jan 10, 2026</small><h3>SEO Tips for Small Businesses</h3><p>Simple, practical steps to rank higher on Google without a big budget.</p><a class="more" href="#insights">Read More</a></div></article>
+    <article class="card pj rv"><!-- Replace this demo image with your own blog image --><img loading="lazy" data-art="lead:400" alt="Digital marketing growing a business" width="640" height="400"><div><small>Marketing · Feb 02, 2026</small><h3>How Digital Marketing Can Grow Your Business</h3><p>Where to invest first to get steady leads from online channels.</p><a class="more" href="#insights">Read More</a></div></article>
+    <article class="card pj rv"><!-- Replace this demo image with your own blog image --><img loading="lazy" data-art="web:400" alt="Professional business website design" width="640" height="400"><div><small>Web · Feb 20, 2026</small><h3>Why Every Business Needs a Professional Website</h3><p>Your website is your best salesperson, and it never sleeps.</p><a class="more" href="#insights">Read More</a></div></article>
+  </div>
+</div></section>
+
+<!-- 16. CONTACT -->
+<section class="dark" id="contact"><div class="wrap two" style="align-items:start">
+  <div class="rv">
+    <h2>Let's Grow Your Business Together</h2>
+    <p class="m">Tell us about your business and goals. We'll get back to you with ideas and next steps.</p><br>
+    <ul class="ci"><li><b>Email:</b> [badhondas63@gmail.com]</li><li><b>Phone:</b> [01875404837]</li><li><b>Location:</b> Dhaka, Bangladesh</li></ul>
+    <!-- Replace each # with your real profile link -->
+    <div class="soc"><a href="https://www.facebook.com/profile.php?id=61584136933235" aria-label="Facebook">Facebook</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="LinkedIn">LinkedIn</a><a href="#" aria-label="WhatsApp">WhatsApp</a></div>
+  </div>
+  <form id="cf" novalidate class="rv">
+    <div><label for="n">Name</label><input id="n" name="name" required autocomplete="name"><div class="err"></div></div>
+    <div><label for="e">Email</label><input id="e" type="email" required autocomplete="email"><div class="err"></div></div>
+    <div><label for="p">Phone</label><input id="p" type="tel" autocomplete="tel"><div class="err"></div></div>
+    <div><label for="c">Business / Company</label><input id="c" autocomplete="organization"><div class="err"></div></div>
+    <div class="w"><label for="s">Service Required</label><select id="s" required><option value="">Select a service</option><option>Digital Marketing</option><option>SEO</option><option>Web Design</option><option>Web Development</option><option>Social Media Marketing</option><option>Facebook / Google Ads</option><option>Graphic Design</option><option>Branding</option></select><div class="err"></div></div>
+    <div class="w"><label for="m">Message</label><textarea id="m" required></textarea><div class="err"></div></div>
+    <div class="w"><button class="btn p" type="submit">Send Message</button></div>
+    <div class="w" id="ok" role="status">Thank you! Your message is ready. (Demo form: connect a backend or email service such as Formspree to receive submissions.)</div>
+  </form>
+</div></section>
+
+<!-- 17. FINAL CTA -->
+<section style="padding:70px 0"><div class="wrap"><div class="band rv">
+  <h2>Let's Build Something Amazing Together.</h2>
+  <p>From strategy to execution, Boostweb Digital helps your business grow in the digital world.</p>
+  <a class="btn p" href="#contact">Get a Free Consultation</a>
+</div></div></section>
+</main>
+
+<!-- 18. FOOTER -->
+<footer><div class="wrap">
+  <div class="fg">
+    <div><div class="logo" style="color:#fff">BOOST<b>WEB</b> DIGITAL</div><p style="margin:6px 0 10px;color:#fff;font-weight:600">Your Digital Growth Partner</p><p>A digital marketing and web agency helping businesses grow online with SEO, design, development and ads.</p></div>
+    <div><h3>Quick Links</h3><ul><li><a href="#">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div><h3>Services</h3><ul><li>Digital Marketing</li><li>SEO</li><li>Web Design</li><li>Web Development</li><li>Graphic Design</li><li>Social Media Marketing</li></ul></div>
+    <div><h3>Contact</h3><ul><li>[badhondas63@gmail.com]</li><li>[01875404837]</li><li>Dhaka, Bangladesh</li></ul>
+      <div class="soc"><a href="#" aria-label="Facebook">Fb</a><a href="#" aria-label="Instagram">Ig</a><a href="#" aria-label="LinkedIn">In</a><a href="#" aria-label="WhatsApp">Wa</a></div></div>
+  </div>
+  <div class="fb"><span>© 2026 Boostweb Digital. All Rights Reserved.</span><span><a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></span></div>
+</div></footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+/* ===== Editable content ===== */
+// Portfolio: replace img URLs with your own project images
+const projects=[
+ ["Web","Business Website","Corporate website with clear service pages and lead forms.","web"],
+ ["Web","E-commerce Website","Fast online store with simple checkout and product SEO.","shop"],
+ ["SEO","SEO Growth Campaign","Keyword and content plan that grew organic traffic.","seo"],
+ ["Marketing","Social Media Campaign","Content calendar and creatives that boosted engagement.","social"],
+ ["Marketing","Facebook Lead Generation","Targeted ad funnel delivering qualified enquiries.","lead"],
+ ["Branding","Brand Identity Design","Logo, colors and guidelines for a memorable brand.","brand"]];
+const why=[["target","Customized Strategies","Plans built around your business, not a template."],["chart","Results-Oriented Approach","Every action is tied to leads, sales or visibility."],["chat","Transparent Communication","Clear updates and honest reporting."],["code","Modern Technology","Fast, secure, up-to-date tools and code."],["spark","Creative & Data-Driven","Good ideas, tested against real numbers."],["users","Long-Term Partnership","We grow with you, beyond a single project."],["clock","Responsive Support","Quick replies when you need us."],["tag","Affordable Solutions","Flexible packages for every budget."]];
+const inds=[["tag","E-commerce"],["pen","Education"],["spark","Fashion"],["users","Restaurants"],["home","Real Estate"],["shield","Healthcare"],["target","Startups"],["mon","Local Businesses"]];
+// DEMO testimonials: replace names, companies, photos and text
+const tms=[["Rahim Uddin","Owner, Demo Fashion Store","Our online sales grew steadily after the new website and ads. Communication was clear throughout."],["Nusrat Jahan","Founder, Demo Education Centre","They understood our audience quickly and our enquiries improved within weeks."],["Arif Hossain","Director, Demo Real Estate","Professional team, on-time delivery and a website we're proud to show clients."],["Sara Ahmed","CEO, Demo Startup","Helpful, creative and focused on results. A reliable growth partner."]];
+const faqs=[["What services does Boostweb Digital provide?","We offer digital marketing, SEO, web design, web development, graphic design, social media marketing, Google Ads, Facebook Ads and branding."],["Do you work with small businesses?","Yes. We work with startups, local businesses, personal brands and growing companies, with solutions scaled to your needs."],["How does your SEO service work?","We audit your site, research keywords, fix technical issues, improve content and build authority, then track rankings and traffic."],["Do you provide Facebook and Google Ads management?","Yes. We plan, launch, monitor and optimize campaigns focused on relevant traffic and leads."],["Can you build a complete website for my business?","Yes. We handle design, development, content structure, SEO basics and launch."],["How long does a website project take?","Most business websites take 2 to 4 weeks depending on size and how quickly content and feedback arrive."],["Do you provide customized digital marketing strategies?","Yes. Every strategy is based on your goals, audience, budget and competitors."],["How can I start a project with Boostweb Digital?","Send a message through the contact form. We'll schedule a free consultation to discuss your goals."]];
+/* ===== Built-in illustrations (self-contained SVG, no external images).
+   To use your own photo, set an <img src="your-image.jpg"> or change the URL in the arrays above. ===== */
+const R=(x,y,w,h,f,rx=8,o=1)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${f}" opacity="${o}"/>`;
+const C=(x,y,r,f,o=1)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}" opacity="${o}"/>`;
+const T=(x,y,z,t)=>`<text x="${x}" y="${y}" font-size="${z}" font-weight="700" fill="#fff" text-anchor="middle" font-family="sans-serif">${t}</text>`;
+const A="url(#a)",K=["#7fb0ff","#b59bff","#5ee0c0","#ffb07a"],D=["#3b6cff","#7a4dff","#2bb594","#e0683b"];
+const win=(f="#0b1230",b="#1a2350")=>R(90,50,460,300,f,16)+R(90,50,460,34,b,16)+C(114,67,5,"#ff5f57")+C(132,67,5,"#febc2e")+C(150,67,5,"#28c840");
+const S={
+ dash:()=>win()+[60,90,80,130,110,150].map((h,i)=>R(120+i*34,320-h,22,h,A,5)).join("")+'<path d="M335 280L385 235L435 252L485 180L530 150" stroke="#7fe3ff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+R(335,110,190,12,"#2a3570",6)+R(335,132,110,10,"#2a3570",5),
+ team:()=>[200,320,440].map((x,i)=>C(x,170,36,K[i])+`<path d="M${x-62} 350a62 75 0 0 1 124 0z" fill="${D[i]}"/>`).join("")+R(90,60,130,46,"#fff",20,.14)+R(430,60,130,46,A,20)+T(495,90,16,"+ Leads"),
+ web:()=>win("#f5f7ff","#dfe5fa")+R(116,100,408,90,A,12)+R(136,122,180,14,"#fff",7,.9)+R(136,146,120,10,"#fff",5,.6)+[0,1,2].map(i=>R(116+i*140,208,128,120,"#fff",12)+R(130+i*140,222,50,50,"#dfe5fa",10)+R(130+i*140,286,96,10,"#c9d0ee",5)).join(""),
+ shop:()=>win("#f5f7ff","#dfe5fa")+[0,1,2].map(i=>R(116+i*140,104,128,170,"#fff",12)+C(180+i*140,166,34,K[i])+R(132+i*140,222,70,10,"#c9d0ee",5)+R(132+i*140,244,44,12,A,6)).join("")+C(490,312,24,A)+T(490,321,22,"$"),
+ seo:()=>'<circle cx="280" cy="180" r="100" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-width="16"/><path d="M352 252L430 330" stroke="#fff" stroke-width="22" stroke-linecap="round"/><path d="M210 230L255 190L290 205L340 140" stroke="#7fe3ff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'+R(410,70,130,64,A,18)+T(475,114,36,"#1"),
+ social:()=>R(225,30,190,340,"#0b1230",30)+R(238,50,164,300,"#1a2350",20)+C(268,86,14,A)+R(290,82,80,8,"#2a3570",4)+R(250,114,140,100,A,12,.9)+R(250,228,140,10,"#2a3570",5)+R(250,248,100,10,"#2a3570",5)+R(90,100,110,44,A,22)+T(145,130,18,"&#9829; 2.4k")+R(440,200,110,44,"#fff",22,.15)+T(495,229,18,"Share"),
+ lead:()=>'<path d="M130 80H510L385 205V310L255 345V205Z" fill="url(#a)"/>'+[170,250,320,400,470].map(x=>C(x,50,9,"#7fe3ff")).join("")+T(320,160,26,"Leads")+R(275,225,90,10,"#fff",5,.5),
+ brand:()=>C(230,200,100,A)+'<path d="M190 250V150h38a25 25 0 010 50h-38m38 0a25 25 0 010 50h-38" stroke="#fff" stroke-width="16" fill="none" stroke-linejoin="round"/>'+["#3b6cff","#7a4dff","#7fe3ff","#fff"].map((c,i)=>R(370,90+i*58,150,44,c,12)).join(""),
+ av:i=>C(320,160,66,"#ffd9b8")+`<path d="M170 400a150 140 0 0 1 300 0z" fill="${D[i%4]}"/>`
+};
+const art=(k,h=400,i=0)=>"data:image/svg+xml,"+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 ${h}"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#121a3d"/><stop offset="1" stop-color="#2b2e7a"/></linearGradient><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b6cff"/><stop offset="1" stop-color="#7a4dff"/></linearGradient></defs><rect width="640" height="${h}" fill="url(#g)"/><g transform="translate(0 ${(h-400)/2})">${S[k](i)}</g></svg>`);
+const I=n=>`<svg class="ico" aria-hidden="true"><use href="#${n}"/></svg>`;
+const $=s=>document.querySelector(s);
+
+/* ===== Build dynamic sections ===== */
+$("#pg").innerHTML=projects.map(p=>`<article class="card pj rv" data-c="${p[0]}"><img loading="lazy" src="${art(p[3])}" alt="${p[1]} demo project" width="640" height="400"><div><small>${p[0]}</small><h3>${p[1]}</h3><p>${p[2]}</p><a class="more" href="#portfolio">View Project</a></div></article>`).join("");
+$("#wg").innerHTML=why.map(w=>`<div class="card rv"><div class="ib">${I(w[0])}</div><h3>${w[1]}</h3><p>${w[2]}</p></div>`).join("");
+$("#ig").innerHTML=inds.map(w=>`<div class="card ind rv"><div class="ib">${I(w[0])}</div><h3 style="margin:0">${w[1]}</h3></div>`).join("");
+$("#tt").innerHTML=tms.map((t,i)=>`<div><div class="card tc"><!-- Replace with client photo --><img class="av" loading="lazy" src="${art('av',400,i)}" alt="Photo of ${t[0]} (demo)" width="64" height="64"><div class="star" aria-label="5 out of 5 stars">★★★★★</div><p style="margin:12px 0">“${t[2]}”</p><h3>${t[0]}</h3><p>${t[1]}</p></div></div>`).join("");
+$("#fq").innerHTML=faqs.map((f,i)=>`<div class="q"><h3><button aria-expanded="false" aria-controls="a${i}" id="b${i}">${f[0]}</button></h3><div class="a" id="a${i}" role="region" aria-labelledby="b${i}"><p>${f[1]}</p></div></div>`).join("");
+
+document.querySelectorAll("img[data-art]").forEach(i=>{const a=i.dataset.art.split(":");i.src=art(a[0],+a[1])});
+
+/* ===== Navbar: sticky state, mobile menu, active link ===== */
+const hd=$("#hd"),lk=$("#lk"),bg=$("#bg"),topBtn=$("#top");
+addEventListener("scroll",()=>{hd.classList.toggle("s",scrollY>30);topBtn.classList.toggle("v",scrollY>600)},{passive:true});
+bg.onclick=()=>{const o=lk.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+lk.querySelectorAll("a").forEach(a=>a.onclick=()=>{lk.classList.remove("open");bg.setAttribute("aria-expanded","false")});
+topBtn.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+const navA=[...lk.querySelectorAll("a[href^='#']")];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)navA.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("section[id]").forEach(s=>so.observe(s));
+
+/* ===== Scroll reveal ===== */
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");ro.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>ro.observe(el));
+
+/* ===== Animated counters ===== */
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const el=e.target,t=+el.dataset.count,s=el.dataset.suffix||"",st=performance.now();
+ (function f(n){const p=Math.min((n-st)/1400,1);el.textContent=Math.round(t*p)+s;if(p<1)requestAnimationFrame(f)})(st)}),{threshold:.6});
+document.querySelectorAll("[data-count]").forEach(el=>co.observe(el));
+
+/* ===== Portfolio filter ===== */
+document.querySelectorAll(".fl button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".fl button").forEach(x=>x.classList.toggle("on",x===b));
+ document.querySelectorAll("#pg .pj").forEach(c=>c.classList.toggle("h",b.dataset.f!=="all"&&c.dataset.c!==b.dataset.f))});
+
+/* ===== FAQ accordion ===== */
+document.querySelectorAll(".q button").forEach(b=>b.onclick=()=>{
+ const open=b.getAttribute("aria-expanded")==="true",a=document.getElementById(b.getAttribute("aria-controls"));
+ document.querySelectorAll(".q button").forEach(x=>{x.setAttribute("aria-expanded","false");document.getElementById(x.getAttribute("aria-controls")).style.maxHeight=0});
+ if(!open){b.setAttribute("aria-expanded","true");a.style.maxHeight=a.scrollHeight+"px"}});
+
+/* ===== Testimonial slider (auto + dots) ===== */
+let ti=0;const tt=$("#tt"),td=$("#td");
+td.innerHTML=tms.map((_,i)=>`<button aria-label="Show testimonial ${i+1}"></button>`).join("");
+const go=i=>{ti=(i+tms.length)%tms.length;tt.style.transform=`translateX(-${ti*100}%)`;[...td.children].forEach((d,k)=>d.classList.toggle("on",k===ti))};
+[...td.children].forEach((d,i)=>d.onclick=()=>go(i));go(0);
+setInterval(()=>go(ti+1),6000);
+
+/* ===== Contact form validation (front-end only) ===== */
+$("#cf").addEventListener("submit",e=>{
+ e.preventDefault();let ok=true;
+ const rule=(id,test,msg)=>{const el=$("#"+id),er=el.nextElementSibling,bad=!test(el.value.trim());el.classList.toggle("bad",bad);el.setAttribute("aria-invalid",bad);er.textContent=bad?msg:"";if(bad)ok=false};
+ rule("n",v=>v.length>1,"Please enter your name.");
+ rule("e",v=>/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v),"Enter a valid email address.");
+ rule("p",v=>!v||/^[+\d][\d\s\-()]{6,}$/.test(v),"Enter a valid phone number.");
+ rule("s",v=>v!=="","Please choose a service.");
+ rule("m",v=>v.length>=10,"Message should be at least 10 characters.");
+ if(ok){$("#ok").style.display="block";e.target.reset()}else $("#ok").style.display="none"});
+</script>
+</body>
+</html>
